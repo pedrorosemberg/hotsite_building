@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neovolt | Uma startup da ECONX</title>
+    <meta name="author" content="ECONX TECNOLOGIA" />
+    <meta
+      name="description"
+      content="ECONX - Sustentabilidade e meio ambiente"
+    />
+    <meta
+      name="keywords"
+      content="ECONX, O futuro é verde, Sustentabilidade, meio ambiente, energia sustentável, emissão de carbono, ESG, GHG Certificações"
+    />
+    <link rel="icon" href="icon.svg" type="image/svg" />
+
+    <meta property="og:image" content="icon.svg" />
+    <meta property="og:url" content="https://neovolt.econx.com.br" />
+    <meta property="og:type" content="website" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Tailwind Configuration */
+      @layer base {
+        :root {
+          --color-green: #03983d;
+          --color-blue: #006dff;
+        }
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      footer {
+        margin-top: auto;
+      }
+      /* Para dispositivos móveis, o layout vai ficar centralizado */
+  @media (max-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Para desktops, os itens serão distribuídos entre si */
+  @media (min-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+  }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-[var(--color-green)] to-[var(--color-blue)] text-white p-4 flex justify-between items-center shadow-md">
+        <img 
+        src="logo.png" 
+        alt="Logo Neovolt" 
+        type="image/svg+xml"
+        class="h-8" 
+        loading="lazy"
+      />
+      </header>
+
+    <!-- Hero Section -->
+    <section class="mt-16 flex flex-col items-center text-center p-8 space-y-4">
+      <h1 class="text-3xl font-bold text-[var(--color-green)]">
+        Estamos desenvolvendo algo único!
+      </h1>
+      <p class="text-gray-600 max-w-md">
+        A Neovolt está criando um site que vai transformar sua experiência com
+        energia e sustentabilidade.
+      </p>
+      <p class="text-gray-600 max-w-md">
+        Aguarde por uma revolução na forma de entender e consumir energia.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-[var(--color-blue)] to-[var(--color-green)] text-white p-4 shadow-md flex justify-between items-center md:flex">
+        <p>&copy; 2025 Neovolt. Todos os direitos reservados.</p>
+        <p>
+          Uma startup da
+          <a
+            href="https://www.econx.com.br"
+            class="text-white hover:underline"
+          >ECONX</a>.
+        </p>
+      </footer>
+      
+
+    <script>
+      // Mobile Menu Toggle
+      document
+        .getElementById("menuToggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("flex");
+          menu.classList.toggle("flex-col");
+          menu.classList.toggle("items-center");
+        });
+    </script>
+  </body>
+</html>
